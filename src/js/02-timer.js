@@ -10,7 +10,6 @@ const minute = document.querySelector('[data-minutes]');
 const second = document.querySelector('[data-seconds]');
 const spans = document.querySelectorAll('.value');
 
-
 let timerId = null;
 btnStart.disabled = true;
 
@@ -25,7 +24,6 @@ flatpickr(date, {
       btnStart.disabled = true;
     } else {
       btnStart.disabled = false;
-      Notiflix.Notify.success('Lets go?');
     }
   },
 });
